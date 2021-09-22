@@ -1,0 +1,23 @@
+<view class="integral">
+  <view class="integral-header">
+    <view class="cu-tag round bg-blue my-num">我的积分:<text class="num">{{userInfo.integral||0}}</text></view>
+  </view>
+  <scroll-view class="goods-scroll" scroll-y="{{true}}" bindscrolltoupper="toMore">
+    <view class="goods-list">
+      <view class="goods-item" wx:for="{{goodsList}}" wx:key="*this">
+        <view class="goods-img">
+          <image src="{{item.goodsImgList[0]}}" mode="scaleToFill"></image>
+        </view>
+        <view class="goods-info">
+          <view class="title">{{item.goodsName}}</view>
+          <view class="introduce">{{item.goodsContent}}</view>
+          <view class="price">¥{{item.Price}} | {{item.goodsPrice}}<text class="jifen">积分</text></view>
+        </view>
+        <view class="goods-snap">
+          <view class="btn" bindtap="exchange" data-id="{{item._id}}" data-integral="{{item.goodsPrice}}">兑换</view>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{isLoad}}" class="cu-load  {{!isLoad?'loading':'over'}}"></view>
+  </scroll-view>
+</view>

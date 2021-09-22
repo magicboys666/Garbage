@@ -1,0 +1,141 @@
+/* pages/my/my.wxss */
+.empower {
+  padding-top: 150rpx;
+}
+
+.header {
+  padding: 90rpx 0 40rpx 50rpx;
+  text-align: center;
+  width: 650rpx;
+  height: 300rpx;
+  font-size: 0rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .logo-img {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+  /* vertical-align: middle; */
+}
+
+.content_h {
+  margin-left: 50rpx;
+  margin-bottom: 90rpx;
+  margin-top: 60rpx;
+}
+
+.content_h text {
+  display: block;
+  color: #9d9d9d;
+  margin-top: 40rpx;
+}
+
+.bottom {
+  width: 683rpx;
+  height: 81rpx;
+  background: rgba(255, 212, 0, 1);
+  border-radius: 8rpx;
+  font-size: 29rpx;
+  font-family: SimHei;
+  font-weight: 400;
+  color: rgba(62, 58, 57, 1);
+  line-height: 81rpx;
+  text-align: center;
+  margin: 0rpx auto;
+}
+
+button {
+  background-color: transparent;
+  border-radius: 0rpx;
+  padding: 0rpx;
+  margin: 0rpx;
+  line-height: 1;
+  overflow: visible;
+  color: rgba(78, 101, 101, 1);
+  border-radius: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button::after {
+  /*button的边框样式是通过::after方式实现的*/
+  border: none;
+}
+
+.button-hover {
+  /*点击后样式*/
+  color: #000;
+}
+
+.center {
+  flex-direction: column;
+}
+
+.logo {
+  width: 750rpx;
+  height: 355rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  background-color: #00cc77;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 100rpx;
+  text-align: center;
+}
+
+.logo-hover {
+  opacity: 0.8;
+}
+
+.logo-img {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 150rpx;
+}
+
+.uer-name {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 38rpx;
+  color: #FFFFFF;
+}
+
+.go-login.navigat-arrow {
+  font-size: 38rpx;
+  color: #FFFFFF;
+}
+
+.login-title {
+  height: 150rpx;
+  align-items: self-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+
+.center-list {
+  background-color: #FFFFFF;
+  margin-top: 20rpx;
+  width: 750rpx;
+  flex-direction: column;
+}
+
+.center-list-item {
+  height: 90rpx;
+  width: 750rpx;
+  box-sizing: border-box;
+  flex-direction: row;
+  padding: 0rpx 20rpx;
+}
+
+.integral-num {
+  padding: 0rpx 20rpx;
+  height: 40rpx;
+}
+

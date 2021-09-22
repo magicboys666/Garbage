@@ -1,0 +1,31 @@
+<!--pages/sign/sign.wxml-->
+<view class="margin-sm text-white">
+    <view class="radius">
+        签到:
+        <text class="text-sl">{{total}}</text>
+        天
+    </view>
+    <view class="radius">
+        已连续签到:
+        <text class="text-sl">{{continueSignedCount}}</text>
+        天
+    </view>
+    <view class="radius text-white text-sm"></view>
+</view>
+<view class="bg-white margin-sm radius">
+    <view class="padding-sm">
+        <calendar id="calendar" calendarConfig="{{calendarConfig}}" bind:whenChangeMonth="whenChangeMonth" bind:afterCalendarRender="afterCalendarRender"></calendar>
+    </view>
+    <view class='sign-new'>
+        <view class='new-head'>
+            <!-- 未签到 -->
+            <view wx:if='{{!signed}}' class='sig-qiu sig-qiu-no' bindtap='bindSignFn'>
+                <label class='ti'>签到</label>
+            </view>
+            <!-- 已签到 -->
+            <view wx:else class='sig-qiu sig-qiu-yes'>
+                <label class='ti'>已签到</label>
+            </view>
+        </view>
+    </view>
+</view>

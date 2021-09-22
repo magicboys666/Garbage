@@ -1,0 +1,31 @@
+/* pages/result/result.wxss */
+.title{
+  font-size: 40rpx;
+  text-align: center;
+  line-height: 80rpx;
+  margin-top: 50rpx;
+}
+
+.btn{
+  background-color: #00cc77;
+  margin-top: 300rpx;
+  border-radius: 20rpx;
+}
+
+.item{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #00cc77;
+  margin: 20rpx auto;
+  font-size: 30rpx;
+  line-height: 60rpx;
+}
+
+.body{
+  padding: 40rpx;
+}
+
+.red{
+  color: red;
+}

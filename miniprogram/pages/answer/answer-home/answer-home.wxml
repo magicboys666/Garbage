@@ -1,0 +1,70 @@
+<view class="answer-home">
+  <view class="bg"></view>
+  <block wx:if="{{isLogin}}">
+    <view class="user-body">
+      <view class="user-portrait">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <view class="user-info">
+        <view class="user-name info-item">
+          <view class="key">姓名：</view>
+          <view class="value">
+            <block wx:if="{{userIndex!==-1}}">
+              {{nickName}}
+            </block>
+            <block wx:else>
+              暂无名称
+            </block>
+          </view>
+        </view>
+        <view class="user-ranking info-item">
+          <view class="key">排名：</view>
+          <view class="value">
+            <block wx:if="{{userIndex!==-1}}">
+              {{userIndex}}
+            </block>
+            <block wx:else>
+              暂无排名
+            </block>
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+    <view class="answer-menu">
+      <view class="menu-item" bindtap="toAnswer" data-page="answer-run">
+        <view class="item-img">
+          <image src="/images/icon_answer.png" style="width: 40px;height: 40px;"></image>
+        </view>
+        <view class="item-text">
+          <text>答题</text>
+        </view>
+      </view>
+      <view class="menu-item" bindtap="toAnswer" data-page="answer-ranking">
+        <view class="item-img">
+          <image src="/images/icon_rank.png" style="width: 50px;height: 50px;"></image>
+        </view>
+        <view class="item-text">
+          <text>排名</text>
+        </view>
+      </view>
+      <view class="menu-item" bindtap="toAnswer" data-page="answer-history">
+        <view class="item-img">
+          <image src="/images/icon_history.png" style="width: 50px;height: 50px;"></image>
+        </view>
+        <view class="item-text">
+          <text>历史</text>
+        </view>
+      </view>
+      <view class="menu-item" bindtap="goWrongList">
+        <view class="item-img">
+          <image src="/images/icon_unanswer.png" style="width: 40px;height: 40px;"></image>
+        </view>
+        <view class="item-text">
+          <text>错题</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

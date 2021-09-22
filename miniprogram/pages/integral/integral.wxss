@@ -1,0 +1,133 @@
+page{
+  display: flex;
+  flex-direction: column;
+  background: #f6f6f6;
+  align-items: center;
+  height: 100%;
+}
+
+/**隐藏滚动条**/
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.integral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.integral-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.my-num {
+  padding: 40rpx 60rpx;
+  font-size: 24rpx;
+}
+
+.my-num .num {
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+.goods-scroll {
+  margin-top: 15vh;
+  flex: 1 1 auto;
+  background-color: rgba(0, 0, 0, 0.04);
+  width: 90vw;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10rpx;
+  margin-bottom: 50rpx;
+}
+
+.goods-list {
+  padding: 16rpx 26rpx;
+}
+
+.goods-item {
+  height: 200rpx;
+  background: rgba(66, 66, 66, 0.1);
+  border-radius: 6rpx;
+  display: flex;
+  margin-bottom: 20rpx;
+}
+
+.goods-img {
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 4rpx;
+}
+
+.goods-img image{
+  height: 100%;
+  width: 100%;
+  border-radius: 4rpx;
+}
+
+.goods-info {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30rpx;
+}
+
+.goods-info .title {
+  font-size: 34rpx;
+  line-height: 60rpx;
+}
+
+.goods-info .introduce {
+  flex: 1;
+  font-size: 22rpx;
+  color: #aaaaaa;
+}
+
+.goods-info .price {
+  color: red;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.goods-info .jifen{
+  font-size: 26rpx;
+}
+
+.goods-snap {
+  width: 110rpx;
+  display: flex;
+  padding-bottom: 20rpx;
+}
+
+.goods-snap .btn {
+  width: 120rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  background-color: red;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 100px;
+  width: 90rpx;
+  align-self: flex-end;
+
+}
+
+.cu-load.over::before {
+	content: "";
+}
+
+.cu-load.over::after {
+	content: "";
+}

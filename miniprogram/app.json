@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/result/result",
+    "pages/ai/index",
+    "pages/sign/sign",
+    "pages/ai/camera/camera",
+    "pages/ai/search",
+    "pages/ai/filter/filter",
+    "pages/sort/sort",
+    "pages/result/gan",
+    "pages/result/list",
+    "pages/result/commit",
+    "pages/my/my",
+    "pages/integral/integral",
+    "pages/answer/answer-home/answer-home",
+    "pages/answer/answer-run/answer-run",
+    "pages/answer/answer-ranking/answer-ranking",
+    "pages/answer/answer-history/answer-history",
+    
+    "pages/wrongList/wrongList"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00cc77",
+    "navigationBarTitleText": "智能垃圾分类",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#00cc77",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/ai/index",
+        "text": "首页",
+        "iconPath": "images/icon_index_default.png",
+        "selectedIconPath": "images/icon_index.png"
+      },
+      {
+        "pagePath": "pages/answer/answer-home/answer-home",
+        "text": "答题",
+        "iconPath": "images/icon_answer_default.png",
+        "selectedIconPath": "images/icon_answer.png"
+      },
+      {
+        "pagePath": "pages/sort/sort",
+        "text": "分类",
+        "iconPath": "images/icon_sort_default.png",
+        "selectedIconPath": "images/icon_sort.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/icon_my_default.png",
+        "selectedIconPath": "images/icon_my.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

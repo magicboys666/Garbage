@@ -1,0 +1,80 @@
+<scroll-view class="content-info" scroll-y>
+  <!-- 轮播图 -->
+  <swiper class="content-info-slide" indicator-color="#fff" indicator-active-color="#00cc77" indicator-dots circular
+    autoplay>
+    <swiper-item>
+      <image
+        src="https://6d61-magic-7g6favc279535843-1305130152.tcb.qcloud.la/Garbage/top_img1.jpg?sign=f14be514e9a43b37171de9978b56afbd&t=1628642491" />
+    </swiper-item>
+    <swiper-item>
+      <image
+        src="https://6d61-magic-7g6favc279535843-1305130152.tcb.qcloud.la/Garbage/top_img2.jpg?sign=ec6bc8b0a52216bca1090e07045cc8fb&t=1628642509" />
+    </swiper-item>
+    <swiper-item>
+      <image
+        src="https://6d61-magic-7g6favc279535843-1305130152.tcb.qcloud.la/Garbage/top_img3.jpg?sign=990784d2f8d4e05d53c1ee7f3629b3e9&t=1628642517" />
+    </swiper-item>
+  </swiper>
+  <!-- 搜索框 -->
+  <view class="cu-bar bg-darkGray search">
+    <view class=" search-form  round " bindtap="goSearch">
+      <text class="cuIcon-search text-green"></text>
+      <input type="text" placeholder="输入垃圾名称" confirm-type="search" bindinput="searchIcon"></input>
+    </view>
+  </view>
+  <!-- 内容部分 -->
+  <view class="content-info-portal">
+    <view>
+      <image src="/images/paizhao.png" bindtap="onBindCamera" />
+      <text>图片识别</text>
+    </view>
+    <view>
+      <image src="/images/sign.png" bindtap="onBindSign" />
+      <text>每日签到</text>
+    </view>
+    <view>
+      <image src="/images/pe.png" bindtap="onBindIntegral" />
+      <text>积分兑换</text>
+    </view>
+    <view>
+      <image src="/images/sort.png" bindtap="onBindSort" />
+      <text>垃圾分类</text>
+    </view>
+  </view>
+  <view class="content-info-portal">
+    <view>
+      <image src="/images/answer.png" bindtap="onBindAnswer" />
+      <text>每日答题</text>
+    </view>
+    <view>
+      <image src="/images/icon_rank.png" bindtap="onBindRank" />
+      <text>答题排名</text>
+    </view>
+    <view>
+      <image src="/images/history.png" bindtap="onBindHistory" />
+      <text>历史答题</text>
+    </view>
+    <view>
+      <image src="/images/unanswer.png" bindtap="onBindUnanswer" />
+      <text>答题错题</text>
+    </view>
+  </view>
+  <!-- 内容底部 -->
+  <view class="footer">
+    <image style="width: 100%;"
+      src="https://6d61-magic-7g6favc279535843-1305130152.tcb.qcloud.la/Garbage/foot_img1.jpg?sign=7c6e3cc29e84d9ae7c5a502cf337c18e&t=1628653728">
+    </image>
+  </view>
+  <!-- <view class='ai-view'>
+  <text class='txt'>或</text>
+  <image src='/images/paizhao.png' class='ai-paizhao' bindtap='onBindCamera' />
+  <text class='tip'>自动识别</text>
+</view> -->
+</scroll-view>
+<!-- 顶部提示 -->
+<view class="box" wx:if="{{SHOW_TOP}}">
+  <view class='arrow'></view>
+  <view class='body' bindtap='showModal'>
+    <text>点击「添加到我的小程序」</text>
+  </view>
+</view>

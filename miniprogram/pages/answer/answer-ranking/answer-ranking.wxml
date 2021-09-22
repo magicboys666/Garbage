@@ -1,0 +1,27 @@
+<scroll-view class="content-info" scroll-y>
+<view class="answer-ranking">
+  <view class="ranking-bdoy">
+    <view class="ranking-item" wx:for="{{userAnswerList}}" wx:key="*this">
+      <view class="item-info">
+        <view class="num">
+          <block wx:if="{{index<3}}">
+            <text class="my-iconfont icon-paiming1 paiming-bg"></text>
+            <text class="info">{{index+1}}</text>
+          </block>
+          <block wx:else>
+            <text class="p-num">{{index+1}}</text>
+          </block>
+        </view>
+        <view class="img">
+          <image src="{{item.avatarUrl}}"></image>
+        </view>
+        <view class="name">{{item.nickName}}</view>
+      </view>
+      <view class="integral">
+        <p style="color: white;">获得</p><text class="num">{{item.answerIntegral||0}}</text>
+        <p style="color: white;">积分</p>
+      </view>
+    </view>
+  </view>
+</view>
+</scroll-view>

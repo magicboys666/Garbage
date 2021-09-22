@@ -1,0 +1,51 @@
+<!--pages/my/my.wxml-->
+<view wx:if="{{!isLogin}}">
+  <view class="empower">
+    <view class='header'>
+      <view class="logo-img">
+        <open-data type="userAvatarUrl" style="width: 100%;height: 100%;display: inline-block;"></open-data>
+      </view>
+    </view>
+    <view class='content_h'>
+      <view>申请获取以下权限</view>
+      <text>获得你的公开信息(昵称，头像、地区等)</text>
+    </view>
+  </view>
+  <button class='bottom' type='primary' open-type="getUserInfo" withCredentials="true" lang="zh_CN"
+    bindtap="wxGetUserInfo">
+    授权登录
+  </button>
+</view>
+
+<view wx:else>
+  <view>
+    <view class="logo">
+      <image class="logo-img" src="{{userInfo.avatarUrl}}"></image>
+      <view>
+        <text class="uer-name">Hi，{{nickName}}</text>
+      </view>
+    </view>
+    <view class="cu-list menu sm-border" bindtap="goIntegral">
+      <view class="cu-item arrow">
+        <view class="content">
+          <text class="cuIcon-favor  text-grey"></text>
+          <text class="text-grey">我的积分</text>
+        </view>
+        <view class="action">
+          <view class="cu-tag round bg-blue light integral-num">{{userInfo.integral||0}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="cu-list menu sm-border" bindtap="delCache">
+      <view class="cu-item arrow">
+        <view class="content">
+          <text class="cuIcon-refresh  text-grey"></text>
+          <text class="text-grey">清除缓存</text>
+        </view>
+      </view>
+    </view>
+    <view style="margin-top:53%;">
+      <official-account></official-account>
+    </view>
+  </view>
+</view>
